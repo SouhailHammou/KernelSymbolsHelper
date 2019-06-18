@@ -100,3 +100,7 @@ VOID DriverCode(PDRIVER_OBJECT DriverObject)
 	}
 }
 ```
+
+## Important
+Both DLLs `dbghelp.dll` and `symsrv.dll` must be present in the same directory as the user-mode module's executable.
+

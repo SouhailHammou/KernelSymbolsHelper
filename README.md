@@ -9,7 +9,7 @@ Uses of this project for means other than research can have serious security imp
 
 The project contains a user-mode module and a kernel driver that communicate with each other. The driver supplies all the names of the functions and structure fields to resolve to the user-mode module. The latter resolves the functions' RVAs and structure offsets using the symbol server, communicates them to the driver, and then terminates.
 
-To run, you have to manually load the driver first then execute the user-mode module.
+To run, you have to manually load the driver first (e.g. OSRLOADER) then execute the user-mode module.
 
 ## How to use
 

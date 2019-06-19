@@ -13,7 +13,8 @@ To run, you have to manually load the driver first then execute the user-mode mo
 
 ## How to use
 
-As an example, the kernel code included with this project looks up all user-mode alertable threads for user-mode APC injection, it has been tested under Windows 7 x64, Windows 10 x64.
+As an example, the kernel code included with this project looks up all user-mode alertable threads suitable for user-mode APC injection, it has been tested under Windows 7 x64 and Windows 10 x64.
+
 As a user of this project, you will only be modifying a single file within the kernel module : `DriverCode.c`. 
 
 Within this file we define the types and pointers to the undocumented kernel routines your code will be calling (`PsGetNextProcess` and `PsGetNextProcessThread` in our example).

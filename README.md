@@ -32,7 +32,7 @@ t_PsGetNextProcessThread PsGetNextProcessThread;
 Next, we define storage for each structure offset we're going to need.
 
 ```C
-//Structure field offsets
+//Structure fields offsets
 FIELD_DATA KTHREAD_Alertable;
 FIELD_DATA KTHREAD_WaitMode;
 FIELD_DATA KTHREAD_ApcQueueable;
